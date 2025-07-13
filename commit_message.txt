@@ -1,0 +1,24 @@
+[Cursor] Initial commit: AppImage Desktop Tools v0.1
+
+Robust AppImage desktop file generator with ironclad icon extraction and browser URL support.
+
+Features:
+- Ironclad icon extraction: extracts all icons, scores them, caches all, returns best
+- Browser URL support: generates .desktop files with %u placeholder for URL arguments
+- Deterministic and idempotent: safe to run multiple times
+- Executable permissions: automatically sets correct permissions on .desktop files
+- Category detection: intelligent application categorization
+- Icon caching: stores icons without extensions in proper hicolor theme structure
+- Desktop database updates: automatically updates desktop environment
+
+Fixed issues:
+- Icon names without extensions (was causing desktop validation errors)
+- Executable permissions on .desktop files
+- URL argument support for browser AppImages
+- Proper icon caching in hicolor theme structure
+
+Tested with:
+- LibreWolf.x86_64.AppImage (browser with URL support)
+- rustdesk-1.2.3-x86_64.AppImage (remote desktop)
+- Cursor-1.0.0-x86_64.AppImage (code editor)
+- freetube-0.23.5-amd64.AppImage (media player) 
