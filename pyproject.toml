@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appimage-desktop-tools"
+version = "0.1.0"
+description = "Robust AppImage desktop file generator with ironclad icon extraction and browser URL support"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Brandon", email = "brandon@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Desktop Environment",
+    "Topic :: System :: Installation/Setup",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "Pillow>=8.0.0",
+    "watchdog>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.0",
+    "flake8>=3.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/abcdqfr/appimage-monitor"
+Repository = "https://github.com/abcdqfr/appimage-monitor"
+Issues = "https://github.com/abcdqfr/appimage-monitor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"] 
